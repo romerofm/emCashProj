@@ -1,40 +1,42 @@
-<p align="center"><a href="https://emcash.com.br/" target="_blank"><img src="https://emcash.com.br/wp-content/uploads/2023/03/emcash-logo_ALTA-01.png" width="600" alt="Emcash"></a></p>
 
-# Here are some tips to start
+# Dicas para inicializar o projeto
 
-* This project utilizes Laravel Lumen
+* Este projeto utiliza Laravel Lumen
 
-* You will need composer, docker and docker compose installed
+* Voce precisará do composer, docker e docker compose instalados 
+* you will need composer, docker and docker compose installed
 
+* Voce deve rodar o comando 'composer install --ignore-platform-reqs' primeiramente depois de clonar o repositório 
 * You must run the command 'composer install --ignore-platform-reqs' as the first step after you clone the project
 
-* After properly start the containers you will have access to some .sh files
+* Após inicializado todos os containers você terá acesso a alguns arquivos .sh 
+* after properly start the containers you will have access to some .sh files
 
  - composer-install.sh
+    - Este arquivo irá importar todas as bibliotecas necessárias para o funcionamento apropriado do projeto
     - This file will import all the necessary libraries for the proper functioning of the project
 
  - migrations.sh
+    - este arquivo irá criar e popular o banco de dados com um registro exemplo
     - This file will create the database and seed with an example register
 
  - run-tests.sh
+    - ste arquivo executa a pilha de testes automatizados
     - This file executes the automated tests stack
 
-## Application ports
+## Portas
 
  - api: 8000
  - phpmyadmin: 8080
  - swagger: 82
 
- > [!TIP]
- > You can find the phpmyadmin access info in the .env.example
 
-## Application .csv
 
-* You can find a `.csv` example inside the folder `example/`
+## .csv
 
-* Copy this file and use it as the base example
+* O `.csv` se encontra dentro da pasta `example/`
 
-* You can also find in the same directory one `.json` file with the API endpoint collection to use with [Insomnia](https://insomnia.rest/download)
+* Copie este arquivo e use como base
 
-> [!IMPORTANT]
-> Follow the received instructions to complete the tasks
+
+
